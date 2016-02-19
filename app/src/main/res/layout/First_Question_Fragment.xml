@@ -26,13 +26,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="How many different colored ballons do you see on the screen?"
+        android:text="How many different colored balloons do you see on the screen?"
         android:id="@+id/textView2"
         android:textColor="#fcfafa"
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:gravity="center"/>
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:id="@+id/firstQuestionButton"
+        android:background="#1b1da0"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,18 +58,9 @@
         android:layout_centerHorizontal="true"
         android:text="Answer Here"
         android:textColor="#ffffff"
-        android:gravity="center"/>
+        android:gravity="center"
+        />
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Next Question"
-        android:id="@+id/firstQuestionButton"
-        android:layout_below="@+id/first_question_answer"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:background="#1b1da0"
-        android:textColor="#ffffff" />
 
 
 </RelativeLayout>

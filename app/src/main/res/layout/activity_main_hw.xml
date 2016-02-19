@@ -10,9 +10,17 @@
     tools:context="com.example.grisha.homework1.MainHW"
     android:background="#000000">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/linearLayout"
+        android:orientation="vertical">
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Would you like to take a simple quiz?"
         android:id="@+id/textView"
@@ -21,26 +29,20 @@
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start"
-        android:id="@+id/startButton"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="53dp"
-        android:onClick="startQuiz"
-        android:textColor="#ffffff"
-        android:background="#110b85" />
 
-    <FrameLayout
-        android:id="@+id/main_fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/startButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="215dp"
-        android:layout_marginStart="215dp">
-    </FrameLayout>
+    </LinearLayout>
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Start"
+    android:id="@+id/startButton"
+
+    android:textColor="#ffffff"
+    android:background="#110b85"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
