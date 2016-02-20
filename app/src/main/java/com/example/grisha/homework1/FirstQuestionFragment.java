@@ -15,9 +15,8 @@ import android.widget.EditText;
 
 public class FirstQuestionFragment extends Fragment {
 
-       public  EditText firstAnswer ;
+        public EditText firstAnswer ;
         private Button nextQuestion ;
-        public boolean correct ;
         Fragment secFrag;
 
 
@@ -51,19 +50,20 @@ public class FirstQuestionFragment extends Fragment {
 
     public void firstQuestion(View view){
         secFrag = (Fragment) new SecondQuestion();
+               System.out.println(String.valueOf(firstAnswer));
+        if(firstAnswer.getText().toString().equals("3") ){
 
-        if(firstAnswer.equals(3)){
-                correct = true ;
+            MainHW.firstCorrect = true; ;
 
-                getActivity().getFragmentManager()
+                getActivity().getFragmentManager(   )
                         .beginTransaction()
                         .replace(R.id.main_fragment_container, secFrag)
-                        .addToBackStack(null)
+                         .addToBackStack(null)
                         .commit();
             }
 
             else{
-                correct = false ;
+             MainHW.firstCorrect = false;
 
                 getActivity().getFragmentManager()
                         .beginTransaction()
@@ -74,9 +74,5 @@ public class FirstQuestionFragment extends Fragment {
 
 
         }
-
-    public boolean Answer(){
-        return correct ;
-    }
 
 }

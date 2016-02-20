@@ -14,6 +14,8 @@ public class MainHW extends AppCompatActivity {
 
     Fragment firstFrag ;
     Intent intent ;
+    public static boolean firstCorrect ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

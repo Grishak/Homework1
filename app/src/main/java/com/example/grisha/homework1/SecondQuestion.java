@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+
 /**
  * Created by Grisha on 2/14/2016.
  */
@@ -48,14 +49,15 @@ public class SecondQuestion extends Fragment {
 
     public void finish(View view) {
         boolean checked = btnEllen.isChecked();
-        FirstQuestionFragment firstQuestAnswer = new FirstQuestionFragment();
+
+
         if(checked== true){
             Ellen = true;
         }
         else {
             Ellen = false ;
         }
-        displayGrade(Ellen, firstQuestAnswer.Answer());
+        displayGrade(Ellen, MainHW.firstCorrect);
 
     }
 
