@@ -37,11 +37,7 @@ public class MainHW extends AppCompatActivity {
 
     }
 
-       /* public void startQuiz(View view){
-            Intent intent = new Intent(this,Start.class);
-            startActivity(intent);
 
-        }*/
     }
 
 
